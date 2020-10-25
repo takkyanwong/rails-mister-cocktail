@@ -1,0 +1,27 @@
+.cards {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 2px;
+  background: white;
+}
+
+.card-photo {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  border-radius: 2px;
+}
+
+.card-name {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E91E63;
+  }
+}

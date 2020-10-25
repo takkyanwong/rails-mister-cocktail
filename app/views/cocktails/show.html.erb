@@ -1,0 +1,18 @@
+
+<div class="cocktail-container" >
+
+  <div class="cocktail-info" class="col-xs-4 col-sm-4">
+    <h1><%= @cocktail.name %></h1>
+
+    <ul class="ingredient-list" class="col-xs-4 col-sm-4">
+      <% @cocktail.doses.each do |dose| %>
+      <li> <i class="fas fa-glass-martini"></i> <span style="color: #E91E63"><%= dose.ingredient.name %></span> (<%= dose.description %>) | <%= link_to '🗑', dose_path(dose), method: :delete %></li>
+      <% end %>
+    </ul>
+
+    <%= render 'doses/form' %>
+  </div>
+
+  <div class="cocktail-photo">
+  </div>
+</div>

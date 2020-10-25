@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import "cocktails";
+@import "doses";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

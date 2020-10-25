@@ -1,0 +1,70 @@
+// Place all the styles related to the Cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.cocktail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.cocktail-info {
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.cocktail-info h1 {
+  font-size: 50px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.cocktail-form {
+  padding-top: 20px;
+}
+
+.add-cocktail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.add-info {
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+
+  h1 {
+    font-size: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+  }
+}
+
+.fa-plus {
+  color: #E91E63;
+}

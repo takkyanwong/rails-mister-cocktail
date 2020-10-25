@@ -1,0 +1,7 @@
+<div class="dose-form" >
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.association :ingredient, collection: Ingredient.order('name ASC') %>
+<%= f.input :description, label: 'Amount' %>
+<%= f.submit "Add Ingredient", class: "button-ingredient" %>
+<% end %>
+</div>
