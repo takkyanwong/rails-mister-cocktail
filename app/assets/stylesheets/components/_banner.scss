@@ -1,7 +1,7 @@
 .banner {
   color: white;
   text-align: center;
-  height: calc(100vh - 50px);
+  height: calc(60vh - 50px);
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -13,7 +13,7 @@
 
 .banner h1 {
   font-size: 50px;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto', bold;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }

@@ -1,16 +1,16 @@
 
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path 'banner.jpg' %>');">
   <div class="banner-content">
-    <h1>Secret Cocktails</h1>
-    <p>Get your taste buds racing</p>
+    <h1>LeCocktails</h1>
+    <p>Leonardo Approves!</p>
     <div class="col-xs-6 col-xs-offset-3" >
       <%= link_to 'Explore Now', '', class: "btn btn-sm animated-button thar-three", style: "
       z-index: 1;"%>
     </div>
   </div>
 </div>
-<div id="main-content" class="main-content" style="height: calc(100vh - 50px)">
-  <h1>Top Secrets</h1>
+<div id="main-content" class="main-content" style="height: calc(50vh - 50px)">
+  <h1>LeCocktail Selection</h1>
   <p><span id="typed"></span></p>
   <div class="cards">
     <% @cocktails.each do |c| %>
