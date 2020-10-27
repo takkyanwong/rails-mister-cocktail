@@ -5,7 +5,7 @@ a.animated-button.thar-three {
   cursor: pointer;
   display: block;
   position: relative;
-  border: 2px solid #E91E63;
+  border: 2px solid #df1ee9a1;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
@@ -31,6 +31,6 @@ a.animated-button.thar-three:before {
   z-index: -1;
   content: '';
   color: #fff !important;
-  background: #E91E63;
+  background: #df1ee9a1;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }

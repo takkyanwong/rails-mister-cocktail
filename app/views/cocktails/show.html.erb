@@ -6,7 +6,7 @@
 
     <ul class="ingredient-list" class="col-xs-4 col-sm-4">
       <% @cocktail.doses.each do |dose| %>
-      <li> <i class="fas fa-cocktail"></i> <span style="color: #E91E63"><%= dose.ingredient.name %></span> (<%= dose.description %>) | <%= link_to '🗑', dose_path(dose), method: :delete %></li>
+      <li> 🍸 <span style="color: #df1ee9a1"><%= dose.ingredient.name %></span> (<%= dose.description %>) | <%= link_to '🚮', dose_path(dose), method: :delete %></li>
       <% end %>
     </ul>
 
