@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 gem 'autoprefixer-rails'
+gem 'dotenv-rails', groups: %i[development test]
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
