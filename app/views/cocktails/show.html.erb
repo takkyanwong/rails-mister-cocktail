@@ -10,9 +10,13 @@
       <% end %>
     </ul>
 
+  <div>
+    <%= link_to '🚮 Delete Cocktail', cocktail_path(@cocktail), method: :delete %>
+  </div>
     <%= render 'doses/form' %>
   </div>
 
   <div class="cocktail-photo">
+    <%= cl_image_tag @cocktail.photo.key, height: 500, width: 400, crop: :fill %>
   </div>
 </div>
