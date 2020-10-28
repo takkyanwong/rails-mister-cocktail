@@ -5,8 +5,9 @@
   cursor: pointer;
   display: block;
   position: relative;
-  border: 2px solid #df1ee9a1;
+  border: 2px solid black;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  background-color: #df1ee9a1;
 }
 
 .button-ingredient:hover {

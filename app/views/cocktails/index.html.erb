@@ -15,19 +15,13 @@
   <div class="cards">
     <% @cocktails.each do |c| %>
     <div class="col-xs-12 col-sm-4">
-      <div class="card-photo">
-      <% if c.photo? %>
-      <%= cl_image_tag c.photo.key, height: 500, width: 400, crop: :fill %>
+      <div class="card-photo"> <%= cl_image_tag c.photo.key, height: 500, width: 400, crop: :fill unless c.photo.blank? %>
       </div>
-      <div class="card-name">
-        <%= link_to c.name, cocktail_path(c) %>
-      </div>
-      <% else %>
       <div class="card-name">
         <%= link_to c.name, cocktail_path(c) %>
       </div>
     </div>
     <% end %>
-    <% end %>
   </div>
 </div>
+

@@ -3,14 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 2px;
-  background: white;
+  background: black;
 }
 
 .card-photo {
   display: flex;
   justify-content: center;
   padding-left: 0px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .card-name {
@@ -22,7 +22,7 @@
   a {
     text-decoration: none;
     font-weight: bold;
-    color: #df1ee9a1;
+    color: white;
     font-size: medium;
     font-family: roboto;
   }

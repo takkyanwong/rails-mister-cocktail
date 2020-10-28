@@ -4,5 +4,19 @@
   margin-bottom: 0px;
   border: 1px solid transparent;
   background-color: black;
-  color: #df1ee9a1;
+
+  a {
+    color: #df1ee9a1;
+    font-weight: bold;
+    font-family: roboto;
+  }
+}
+
+.dropdown-menu.dropdown-menu-right.show {
+  background-color: black !important;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
 }
