@@ -17,6 +17,9 @@
       <%= link_to ' Delete Cocktail 🚮', cocktail_path(@cocktail), method: :delete %>
     </div>
       <%= render 'doses/form' %>
+      <% if params[:error] %>
+        <p>Ingredient is already taken</p>
+      <% end %>
   </div>
 
   <div class="cocktail-photo"> <%= cl_image_tag @cocktail.photo.key, height: 500, width: 400, crop: :fill unless @cocktail.photo.blank? %>

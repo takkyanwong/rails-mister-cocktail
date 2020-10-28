@@ -12,15 +12,14 @@
 <div id="main-content" class="main-content" style="height: calc(50vh - 50px)">
   <h1>LeCocktail Selection</h1>
   <p><span id="typed"></span></p>
-  <div class="cards">
+  <div class="cards row">
     <% @cocktails.each do |c| %>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card-photo"> <%= cl_image_tag c.photo.key, height: 500, width: 400, crop: :fill unless c.photo.blank? %>
-      </div>
-      <div class="card-name">
-        <%= link_to c.name, cocktail_path(c) %>
-      </div>
-    </div>
+      <%= link_to cocktail_path(c), class: "col-xs-12 col-sm-4" do %>
+        <div class="cocktail-card">
+          <%= cl_image_tag c.photo.key, class: "cocktail-card-image" unless c.photo.blank? %>
+          <p style="color: white"><%= c.name %></p>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>

@@ -1,9 +1,16 @@
 .cards {
   padding-top: 40px;
-  display: flex;
   flex-wrap: wrap;
   border-radius: 2px;
   background: black;
+}
+
+.cards a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: medium;
+  font-family: roboto;
 }
 
 .card-photo {
@@ -19,11 +26,17 @@
   padding-top: 15px;
   padding-bottom: 30px;
 
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-size: medium;
-    font-family: roboto;
-  }
+}
+
+.cocktail-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cocktail-card-image {
+  height: 500px;
+  object-fit: cover;
+  max-width: 100%;
 }
