@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   border-radius: 2px;
   background: black;
+  padding-left: 8ch;
 }
 
 .cards a {
@@ -38,5 +39,5 @@
 .cocktail-card-image {
   height: 500px;
   object-fit: cover;
-  max-width: 100%;
+  max-width: 80%;
 }
